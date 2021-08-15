@@ -1,0 +1,38 @@
+.contClicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 1088px;
+  height: 336px;
+  margin: 100px;
+  box-sizing: border-box;
+}
+.contStatus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 760px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.contOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1088px;
+  height: 240px;
+  box-sizing: border-box;
+  color: rgba(220, 224, 226, 1);
+}
+.contOptionsFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1088px;
+  height: 240px;
+  box-sizing: border-box;
+}
