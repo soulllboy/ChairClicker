@@ -9,10 +9,77 @@
 
 </head>
 <body>
-<div></div>
 
-<object type="image/svg+xml" data="bigPics/Stool.svg" width="200" height="200" >
-  Your browser does not support SVG</object>
+  <div class="contClicker">
+    <div class="contStatus">
+      <div>
+        <object type="image/svg+xml" data="icons/thunderbolt.svg">SVG "thunderbolt"</object>
+        <div class=backBar>
+          <div class=frontBar></div>
+        </div>
+        <p id="energyCounter">100</p>
+      </div>
+      <a href="" onclick="buyEnergy()">
+        <img src="bigPics/Cookie.svg" alt="Cookie">
+        <p>buy cookie</p>
+      </a>
+      <div onclick="buyEnergy()">
+        <object type="image/svg+xml" data="icons/border.svg">SVG "border"</object>
+        <p>0</p>
+      </div>      
+      <div>
+        <object type="image/svg+xml" data="icons/dollar.svg">SVG "dollar"</object>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div class="contOptions">
+      <div class="contOptionsItem">
+        <div class="contOptionsItemBody">
+          <div>
+            <object type="image/svg+xml" data="bigPics/Wood.svg">SVG "Wood"</object>
+            <p>0</p>
+         </div>
+         <div>
+          <object type="image/svg+xml" data="bigPics/Nails.svg">SVG "Nails"</object>
+          <p>0</p>
+         </div>
+        </div>
+        <div class="contOptionsFooter">
+          <object type="image/svg+xml" data="icons/compass.svg">SVG "compass"</object>
+          <p>explore</p>
+        </div>
+      </div>
+
+      <div class="contOptionsItem">
+        <div class="contOptionsItemBody">
+          <div>
+            <object type="image/svg+xml" data="bigPics/Stool.svg">SVG "Stool"</object>
+            <p>0</p>
+         </div>
+        </div>
+        <div class="contOptionsFooter">
+          <object type="image/svg+xml" data="icons/tool.svg">SVG "tool"</object>
+          <p>craft</p>
+        </div>
+      </div>
+
+      <div class="contOptionsItem">
+        <div class="contOptionsItemBody">
+          <div>
+            <object type="image/svg+xml" data="bigPics/Coins.svg">SVG "Coins"</object>
+            <p>0</p>
+         </div>
+        </div>
+        <div class="contOptionsFooter">
+          <object type="image/svg+xml" data="icons/shopping-cart.svg">SVG "shopping-cart"</object>
+          <p>sell</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 <script  src="./script.js"></script>
 </body>
