@@ -19,30 +19,30 @@
         </div>
         <p id="energyCounter">100</p>
       </div>
-      <a href="" onclick="buyEnergy()">
+      <div class=btn_add onclick="buyEnergy()">
         <img src="bigPics/Cookie.svg" alt="Cookie">
-        <p>buy cookie</p>
-      </a>
-      <div onclick="buyEnergy()">
+        <span>buy cookie</span>
+      </div>
+      <div>
         <object type="image/svg+xml" data="icons/border.svg">SVG "border"</object>
-        <p>0</p>
+        <p id="itemDisplay">0</p>
       </div>      
       <div>
         <object type="image/svg+xml" data="icons/dollar.svg">SVG "dollar"</object>
-        <p>0</p>
+        <p id="moneyDisplay">0</p>
       </div>
     </div>
 
     <div class="contOptions">
-      <div class="contOptionsItem">
+      <div class="contOptionsItem" onclick="exploreWaN()">
         <div class="contOptionsItemBody">
           <div>
             <object type="image/svg+xml" data="bigPics/Wood.svg">SVG "Wood"</object>
-            <p>0</p>
+            <p id="woodCounter">0</p>
          </div>
          <div>
           <object type="image/svg+xml" data="bigPics/Nails.svg">SVG "Nails"</object>
-          <p>0</p>
+          <p id="nailsCounter">0</p>
          </div>
         </div>
         <div class="contOptionsFooter">
@@ -51,11 +51,11 @@
         </div>
       </div>
 
-      <div class="contOptionsItem">
+      <div class="contOptionsItem" onclick="craftItem()">
         <div class="contOptionsItemBody">
           <div>
             <object type="image/svg+xml" data="bigPics/Stool.svg">SVG "Stool"</object>
-            <p>0</p>
+            <p id="itemCounter">0</p>
          </div>
         </div>
         <div class="contOptionsFooter">
@@ -64,11 +64,11 @@
         </div>
       </div>
 
-      <div class="contOptionsItem">
+      <div class="contOptionsItem" onclick="sellItem()">
         <div class="contOptionsItemBody">
           <div>
             <object type="image/svg+xml" data="bigPics/Coins.svg">SVG "Coins"</object>
-            <p>0</p>
+            <p id="moneyCounter">0</p>
          </div>
         </div>
         <div class="contOptionsFooter">

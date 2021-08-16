@@ -1,6 +1,6 @@
 body {
   font-family: Inter;
-  cursor: url(icons/Pointing.svg), default;
+  cursor: url(icons/Pointing.svg), auto;
 }
 .contClicker {
   display: flex;
@@ -54,6 +54,29 @@ body {
   height: 8px;
   border-radius: 4px;
   background: #34ACE0;
+}
+.btn_add {
+  width: 168px;
+  height: 40px;
+  border: 1px solid rgba(220, 224, 226, 0.4);
+  border-radius: 12px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: #DCE0E2;
+}
+.btn_add:hover {
+  color: #868C90;
+  border: 1px solid rgba(220, 224, 226, 1);
+}
+.btn_add img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
 }
 
 .contOptions {
@@ -142,4 +165,5 @@ body {
 }
 #energyCounter {
   color: rgba(134, 140, 144, 1);
+  width: 40px;
 }
