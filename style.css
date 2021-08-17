@@ -1,6 +1,12 @@
+html {
+  cursor: url(icons/Pointing.svg), default;
+}
 body {
   font-family: Inter;
-  cursor: url(icons/Pointing.svg), auto;
+}
+object {
+  
+  cursor: url(icons/Drag.svg), pointer;
 }
 .contClicker {
   display: flex;
