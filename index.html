@@ -1,86 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Clicker</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-
-  <div class="contClicker">
-    <div class="contStatus">
-      <div>
-        <object type="image/svg+xml" data="icons/thunderbolt.svg">SVG "thunderbolt"</object>
-        <div class=backBar>
-          <div class=frontBar></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Project - Chair Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="contClicker">
+      <div class="contStatus">
+        <div>
+          <object type="image/svg+xml" data="icons/thunderbolt.svg">
+            SVG "thunderbolt"
+          </object>
+          <div class="backBar">
+            <div class="frontBar"></div>
+          </div>
+          <p id="energyCounter">100</p>
         </div>
-        <p id="energyCounter">100</p>
+        <div class="btn_add noselect" onclick="buyEnergy()">
+          <img src="bigPics/Cookie.svg" alt="Cookie" />
+          <span>buy cookie</span>
+        </div>
+        <div>
+          <object type="image/svg+xml" data="icons/border.svg">
+            SVG "border"
+          </object>
+          <p id="itemDisplay">0</p>
+        </div>
+        <div>
+          <object type="image/svg+xml" data="icons/dollar.svg">
+            SVG "dollar"
+          </object>
+          <p id="moneyDisplay">0</p>
+        </div>
       </div>
-      <div class=btn_add onclick="buyEnergy()">
-        <img src="bigPics/Cookie.svg" alt="Cookie">
-        <span>buy cookie</span>
-      </div>
-      <div>
-        <object type="image/svg+xml" data="icons/border.svg">SVG "border"</object>
-        <p id="itemDisplay">0</p>
-      </div>      
-      <div>
-        <object type="image/svg+xml" data="icons/dollar.svg">SVG "dollar"</object>
-        <p id="moneyDisplay">0</p>
+
+      <div class="contOptions">
+        <div class="contOptionsItem noselect" onclick="exploreWaN()">
+          <div class="contOptionsItemBody">
+            <div>
+              <img src="bigPics/Wood.svg" />
+              <p id="woodCounter">0</p>
+            </div>
+            <div>
+              <img src="bigPics/Nails.svg" />
+              <p id="nailsCounter">0</p>
+            </div>
+          </div>
+          <div class="contOptionsFooter">
+            <object type="image/svg+xml" data="icons/compass.svg">
+              SVG "compass"
+            </object>
+            <p>explore</p>
+          </div>
+        </div>
+
+        <div class="contOptionsItem noselect" onclick="craftItem()">
+          <div class="contOptionsItemBody">
+            <div>
+              <img src="bigPics/Stool.svg" />
+              <p id="itemCounter">0</p>
+            </div>
+          </div>
+          <div class="contOptionsFooter">
+            <object type="image/svg+xml" data="icons/tool.svg">
+              SVG "tool"
+            </object>
+            <p>craft</p>
+          </div>
+        </div>
+
+        <div class="contOptionsItem noselect" onclick="sellItem()">
+          <div class="contOptionsItemBody">
+            <div>
+              <img src="bigPics/Coins.svg" />
+              <p id="moneyCounter">0</p>
+            </div>
+          </div>
+          <div class="contOptionsFooter">
+            <object type="image/svg+xml" data="icons/shopping-cart.svg">
+              SVG "shopping-cart"
+            </object>
+            <p>sell</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="contOptions">
-      <div class="contOptionsItem" onclick="exploreWaN()">
-        <div class="contOptionsItemBody">
-          <div>
-            <img src="bigPics/Wood.svg">
-            <p id="woodCounter">0</p>
-         </div>
-         <div>
-          <object type="image/svg+xml" data="bigPics/Nails.svg">SVG "Nails"</object>
-          <p id="nailsCounter">0</p>
-         </div>
-        </div>
-        <div class="contOptionsFooter">
-          <object type="image/svg+xml" data="icons/compass.svg">SVG "compass"</object>
-          <p>explore</p>
-        </div>
-      </div>
-
-      <div class="contOptionsItem" onclick="craftItem()">
-        <div class="contOptionsItemBody">
-          <div>
-            <object type="image/svg+xml" data="bigPics/Stool.svg">SVG "Stool"</object>
-            <p id="itemCounter">0</p>
-         </div>
-        </div>
-        <div class="contOptionsFooter">
-          <object type="image/svg+xml" data="icons/tool.svg">SVG "tool"</object>
-          <p>craft</p>
-        </div>
-      </div>
-
-      <div class="contOptionsItem" onclick="sellItem()">
-        <div class="contOptionsItemBody">
-          <div>
-            <object type="image/svg+xml" data="bigPics/Coins.svg">SVG "Coins"</object>
-            <p id="moneyCounter">0</p>
-         </div>
-        </div>
-        <div class="contOptionsFooter">
-          <object type="image/svg+xml" data="icons/shopping-cart.svg">SVG "shopping-cart"</object>
-          <p>sell</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-<script  src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

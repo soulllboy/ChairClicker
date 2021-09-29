@@ -1,12 +1,15 @@
-html {
-  cursor: url(icons/Pointing.svg), default;
-}
 body {
   font-family: Inter;
 }
-object {
-  
-  cursor: url(icons/Drag.svg), pointer;
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+  cursor: pointer;
 }
 .contClicker {
   display: flex;
@@ -15,7 +18,7 @@ object {
   justify-content: space-between;
   width: 1088px;
   height: 336px;
-  margin: 100px;
+  margin: 100px auto;
   box-sizing: border-box;
 }
 .contStatus {
@@ -35,8 +38,9 @@ object {
   box-sizing: border-box;
 }
 .contStatus object {
-  filter: invert(98%) sepia(53%) saturate(57%) hue-rotate(129deg) brightness(94%) contrast(88%) grayscale(100%);
-  width: 24px; 
+  filter: invert(98%) sepia(53%) saturate(57%) hue-rotate(129deg)
+    brightness(94%) contrast(88%) grayscale(100%);
+  width: 24px;
   height: 24px;
   margin-right: 16px;
 }
@@ -45,8 +49,8 @@ object {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.16em;
-  color: #DCE0E2;
-} 
+  color: #dce0e2;
+}
 .backBar {
   width: 240px;
   height: 8px;
@@ -59,7 +63,7 @@ object {
   width: 100%;
   height: 8px;
   border-radius: 4px;
-  background: #34ACE0;
+  background: #34ace0;
 }
 .btn_add {
   width: 168px;
@@ -73,10 +77,10 @@ object {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.08em;
-  color: #DCE0E2;
+  color: #dce0e2;
 }
 .btn_add:hover {
-  color: #868C90;
+  color: #868c90;
   border: 1px solid rgba(220, 224, 226, 1);
 }
 .btn_add img {
@@ -104,7 +108,7 @@ object {
   height: 240px;
   box-sizing: border-box;
   border-radius: 16px;
-  
+
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -114,7 +118,6 @@ object {
 }
 .contOptionsItem:hover {
   box-shadow: 0px 2px 8px rgba(42, 49, 53, 0.15);
-  
 }
 .contOptionsItemBody {
   display: flex;
@@ -134,7 +137,7 @@ object {
   width: 80px;
   margin: 0 24px;
   box-sizing: border-box;
-  color: #DCE0E2;
+  color: #dce0e2;
 }
 .contOptionsItemBody div object {
   width: 80px;
@@ -150,8 +153,9 @@ object {
   box-sizing: border-box;
 }
 .contOptionsFooter object {
-  filter: invert(98%) sepia(53%) saturate(57%) hue-rotate(129deg) brightness(94%) contrast(88%) grayscale(100%);
-  width: 24px; 
+  filter: invert(98%) sepia(53%) saturate(57%) hue-rotate(129deg)
+    brightness(94%) contrast(88%) grayscale(100%);
+  width: 24px;
   height: 24px;
   margin-right: 24px;
 }
@@ -160,12 +164,14 @@ object {
   text-transform: uppercase;
 }
 .contOptionsItem:hover .contOptionsFooter {
-  filter: invert(57%) sepia(10%) saturate(194%) hue-rotate(161deg) brightness(95%) contrast(88%);
+  filter: invert(57%) sepia(10%) saturate(194%) hue-rotate(161deg)
+    brightness(95%) contrast(88%);
 }
 #g12 {
   /*filter: invert(30%) sepia(76%) saturate(4954%) hue-rotate(210deg) brightness(100%) contrast(111%);*/
-  filter: invert(57%) sepia(10%) saturate(194%) hue-rotate(161deg) brightness(95%) contrast(88%);
-  background: #DCE0E2;
+  filter: invert(57%) sepia(10%) saturate(194%) hue-rotate(161deg)
+    brightness(95%) contrast(88%);
+  background: #dce0e2;
   width: 200px;
   height: 200px;
 }
